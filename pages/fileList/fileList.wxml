@@ -1,0 +1,4 @@
+<import src="../../template/navItem/navItem.wxml"/>
+<view wx:for="{{fileListss}}" wx:key="{{index}}" >
+    <template is='fileList' data="{{progress:progress1}}"></template>
+</view>

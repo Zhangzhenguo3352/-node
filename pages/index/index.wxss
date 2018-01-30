@@ -1,0 +1,149 @@
+/**index.wxss**/
+
+page {
+        background: white;
+}
+
+.header {
+        height: 90rpx;
+        font-size: 30rpx;
+        text-align: center;
+        color: rgb(51, 51, 51);
+        background: white;
+        z-index: 1;
+        border-bottom: 1px solid rgb(245, 245, 245);
+        padding: 12px 15px 0 17px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+}
+
+.header image {
+        width: 20px;
+        height: 20px;
+}
+
+.header>.people {
+        float: left;
+}
+
+.header>.upfile {
+        float: right;
+}
+
+.content {
+        padding-bottom: 80rpx;
+         padding-top: 90rpx; 
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+}
+
+.content scroll-view {
+        height: 100%;
+}
+
+.setting {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+        background: white;
+        padding-left: 15px;
+        font-size: 12px;
+        line-height: 40px;
+}
+
+.setting .print {
+        height: 100%;
+        float: right;
+        background: rgb(240, 91, 71);
+        color: white;
+        width: 95px;
+        text-align: center;
+}
+
+.list-item {
+        width: 100%;
+        line-height: 1;
+        height: 128rpx;
+        border-bottom: 1px solid rgb(245, 245, 245);
+        position: relative;
+}
+
+.list-item .info {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20rpx 40rpx 20rpx 26rpx;
+}
+
+.list-item .info>view {
+        display: inline-block;
+        float: left;
+}
+
+.list-item .info .icon {
+        height: 100%;
+        width: 70rpx;
+}
+
+.list-item .info .icon image {
+        width: 100%;
+        height: 100%;
+}
+
+.list-item .info .text {
+        height: 100%;
+        float: left;
+        margin-left: 30rpx;
+        padding-top: 18rpx;
+        box-sizing: border-box;
+        width: 50%;
+}
+
+.list-item .info .text .name {
+        font-size: 26rpx;
+        color: rgb(51, 51, 51);
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+        height: 26rpx;
+}
+
+.list-item .info .text .time {
+        font-size: 20rpx;
+        color: rgb(166, 166, 166);
+        margin-top: 20rpx;
+}
+
+.list-item .info .text .time text {
+        margin-left: 40rpx;
+}
+
+.list-item .info .add {
+        float: right;
+        height: 100%;
+        width: 38rpx;
+        padding: 25rpx 0;
+        box-sizing: border-box;
+}
+
+.list-item .info .add image {
+        width: 100%;
+        height: 100%;
+}
+
+.list-item .delete {
+        font-size: 24rpx;
+        background: red;
+        text-align: center;
+        color: white;
+        line-height: 128rpx;
+        height: 100%;
+        position: absolute;
+        top: 0;
+}

@@ -1,0 +1,32 @@
+<!--index.wxml-->
+ <view class='header'>
+        <image class='people' bindtap='linkMy' src='../../image/iconTitle.png'></image>
+        我的文档
+        <image class='upfile' bindtap='linkFileUpload' src='../../image/upfile.png'></image>
+</view> 
+<view class='content' style='height:{{winHeight}}px'>
+	<scroll-view scroll-y='true' style='heigth:100%'>
+		<view class='list-item' wx:for="{{array}}" style='{{item.txtStyle}}' wx:key="{{index}}">
+				<view class='info'  data-index="{{index}}" data-id='{{item.uf_id}}'  bindtouchstart='touchS' bindtouchmove='touchM' bindtouchend='touchE' bindlongpress='longTap'>
+					<view class='icon'>
+						<image src='{{item.image}}'></image>
+					</view>
+					<view class='text'>
+						<view class='name'>{{item.title}}</view>
+						<view class='time'>{{item.create_time}}<text>{{item.size}}</text></view>
+					</view>
+					<view class='add' catchtap='addWord' data-id='{{item.uf_id}}'>
+						<image src='/image/add.png' ></image>
+					</view>
+				</view>
+				<view class='delete' data-id='{{item.uf_id}}' style="width:{{delBtnWidth }}rpx;right:-{{delBtnWidth}}rpx" bindtap='delWord'>
+					删除
+				</view> 
+		</view>
+	</scroll-view>
+        
+</view>
+<view class='setting'>
+        <text>共{{count}}份文件，合计:<text style='color:rgb(238,91,71)'>￥0.00</text> </text>
+        <view class='print' bindtap='linkNotPrint'>打印设置 ></view>
+</view>
